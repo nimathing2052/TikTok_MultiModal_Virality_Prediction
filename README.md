@@ -19,7 +19,40 @@ This repository contains the code, data, and documentation for a thesis project 
 ## Repository Structure
 
 
-<pre> ```text NEP_LOCAL_ELECTION/ ├── Analysis/ │ └── EDA/ # Outputs from EDA (e.g., heatmaps, plots) │ ├── heatmap_post_count.jpg │ ├── tiktok_video_counts_election_period.jpg │ ├── top_100_hashtags.csv │ └── ... ├── Communication/ # (Not used in this analysis) ├── data/ # Datasets │ ├── NPL_TikTok_3k_with_Embeddings.csv │ ├── NPL_TikTok_3k.csv │ └── NPL_TikTok_Full_28k.csv ├── env/ # (Environment setup, if applicable) ├── PreProcessing/ # (Preprocessing scripts, if applicable) ├── supplementary_files/ # Supporting files for TikTok Scraper │ └── keywords_hashtags_nepal.txt # Keywords/hashtags for metadata collection ├── TikTok_Scrapper/ # TikTok data collection scripts │ ├── download_videos.py # Download TikTok videos from URL list │ ├── metadata_collection.py # Collect TikTok video metadata via Research API │ ├── users_official_api_with_client_auth.py # Fetch user info via official API │ ├── users_parallel.py # Parallel user scraping (Unofficial API) │ ├── users_unofficial_api.py # Sequential user scraping (Unofficial API) │ ├── video_comments_official_api.py # (Optional) Video comment collection (Official API) │ ├── video_comments_unofficial_api.py # (Optional) Video comment collection (Unofficial API) │ ├── filter.py # (Optional) Helper functions │ └── ... ├── EDA_Analysis_Full_Dataset.ipynb # Exploratory Data Analysis notebook ├── hashtags_plot.png # Plot of top hashtags from EDA ├── model_summary.tex # LaTeX output of OLS model summary (RQ2) ├── RQ_1_Prediction.ipynb # RQ1: Virality prediction with machine learning ├── RQ_2_Analysis.ipynb # RQ2: Impact of styles and themes on virality ├── xgb_model.pkl # Saved XGBoost model from RQ1 └── README.md # This file ``` </pre>
+NEP_LOCAL_ELECTION/
+├── Analysis/
+│   └── EDA/                              # Outputs from Exploratory Data Analysis
+│       ├── heatmap_post_count.jpg        # Heatmap of post counts
+│       ├── tiktok_video_counts_election_period.jpg  # TikTok video counts during election
+│       ├── top_100_hashtags.csv          # Top 100 hashtags from analysis
+│       └── ...                           # Additional EDA outputs
+├── Communication/                        # (Not used in this analysis)
+├── data/                                 # Datasets
+│   ├── NPL_TikTok_3k_with_Embeddings.csv # TikTok dataset (3k rows) with embeddings
+│   ├── NPL_TikTok_3k.csv                # TikTok dataset (3k rows) without embeddings
+│   └── NPL_TikTok_Full_28k.csv          # Full TikTok dataset (28k rows)
+├── env/                                  # Environment setup (if applicable)
+├── PreProcessing/                        # Preprocessing scripts (if applicable)
+├── supplementary_files/                  # Supporting files for TikTok Scraper
+│   └── keywords_hashtags_nepal.txt       # Keywords and hashtags for metadata collection
+├── TikTok_Scrapper/                      # Scripts for TikTok data collection
+│   ├── download_videos.py                # Download TikTok videos from URL list
+│   ├── metadata_collection.py            # Collect TikTok video metadata via Research API
+│   ├── users_official_api_with_client_auth.py  # Fetch user info via official API
+│   ├── users_parallel.py                 # Parallel user scraping (Unofficial API)
+│   ├── users_unofficial_api.py           # Sequential user scraping (Unofficial API)
+│   ├── video_comments_official_api.py    # (Optional) Video comment collection (Official API)
+│   ├── video_comments_unofficial_api.py  # (Optional) Video comment collection (Unofficial API)
+│   ├── filter.py                         # (Optional) Helper functions
+│   └── ...                               # Additional scraping scripts
+├── EDA_Analysis_Full_Dataset.ipynb       # Notebook for Exploratory Data Analysis
+├── hashtags_plot.png                     # Plot of top hashtags from EDA
+├── model_summary.tex                     # LaTeX output of OLS model summary (RQ2)
+├── RQ_1_Prediction.ipynb                 # Notebook for RQ1: Virality prediction with ML
+├── RQ_2_Analysis.ipynb                   # Notebook for RQ2: Impact of styles/themes on virality
+├── xgb_model.pkl                         # Saved XGBoost model from RQ1
+└── README.md                             # Project documentation
+
 
 # 🇳🇵 TikTok Political Virality Analysis - Nepal 2022 Local Elections
 
