@@ -1,0 +1,86 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}                                                              & z\_bc\_virality  & \textbf{  R-squared:         } &     0.213   \\
+\textbf{Model:}                                                                      &       OLS        & \textbf{  Adj. R-squared:    } &     0.187   \\
+\textbf{Method:}                                                                     &  Least Squares   & \textbf{  F-statistic:       } &     8.029   \\
+\textbf{Date:}                                                                       & Mon, 28 Apr 2025 & \textbf{  Prob (F-statistic):} &  1.18e-48   \\
+\textbf{Time:}                                                                       &     20:16:15     & \textbf{  Log-Likelihood:    } &   -1987.3   \\
+\textbf{No. Observations:}                                                           &        1530      & \textbf{  AIC:               } &     4077.   \\
+\textbf{Df Residuals:}                                                               &        1479      & \textbf{  BIC:               } &     4349.   \\
+\textbf{Df Model:}                                                                   &          50      & \textbf{                     } &             \\
+\textbf{Covariance Type:}                                                            &    nonrobust     & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                                                                     & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}                                                                   &      -0.0598  &        0.902     &    -0.066  &         0.947        &       -1.830    &        1.710     \\
+\textbf{C(Style\_1\_label)[T.Charisma/Leadership]}                                   &       0.7962  &        0.965     &     0.825  &         0.409        &       -1.096    &        2.689     \\
+\textbf{C(Style\_1\_label)[T.Civic Awareness]}                                       &       0.0864  &        0.939     &     0.092  &         0.927        &       -1.755    &        1.928     \\
+\textbf{C(Style\_1\_label)[T.Comedic]}                                               &       0.2276  &        0.934     &     0.244  &         0.807        &       -1.604    &        2.059     \\
+\textbf{C(Style\_1\_label)[T.Communal]}                                              &      -0.1701  &        0.936     &    -0.182  &         0.856        &       -2.006    &        1.666     \\
+\textbf{C(Style\_1\_label)[T.Critique/Frustration]}                                  &       0.0251  &        0.952     &     0.026  &         0.979        &       -1.843    &        1.893     \\
+\textbf{C(Style\_1\_label)[T.Event Coverage]}                                        &       0.1100  &        0.910     &     0.121  &         0.904        &       -1.675    &        1.896     \\
+\textbf{C(Style\_1\_label)[T.Miscellaneous]}                                         &       0.1919  &        0.974     &     0.197  &         0.844        &       -1.720    &        2.103     \\
+\textbf{C(Style\_1\_label)[T.Music/Entertainment]}                                   &       0.1469  &        0.906     &     0.162  &         0.871        &       -1.630    &        1.924     \\
+\textbf{C(Style\_1\_label)[T.Personal Vlog/Family]}                                  &       0.1638  &        0.919     &     0.178  &         0.859        &       -1.639    &        1.967     \\
+\textbf{C(content\_short)[T.Election]}                                               &       0.5625  &        1.105     &     0.509  &         0.611        &       -1.605    &        2.730     \\
+\textbf{C(content\_short)[T.Independent]}                                            &       0.2791  &        0.103     &     2.702  &         0.007        &        0.076    &        0.482     \\
+\textbf{C(content\_short)[T.Maoist]}                                                 &      -0.1864  &        1.276     &    -0.146  &         0.884        &       -2.689    &        2.316     \\
+\textbf{C(content\_short)[T.UML]}                                                    &       0.0403  &        0.103     &     0.393  &         0.695        &       -0.161    &        0.242     \\
+\textbf{C(author\_verified)[T.10.84250893474384]}                                    &      -0.9432  &        0.354     &    -2.666  &         0.008        &       -1.637    &       -0.249     \\
+\textbf{C(Style\_1\_label)[T.Charisma/Leadership]:C(content\_short)[T.Election]}     &      -1.0391  &        1.183     &    -0.878  &         0.380        &       -3.360    &        1.281     \\
+\textbf{C(Style\_1\_label)[T.Civic Awareness]:C(content\_short)[T.Election]}         &      -0.6229  &        1.138     &    -0.547  &         0.584        &       -2.856    &        1.610     \\
+\textbf{C(Style\_1\_label)[T.Comedic]:C(content\_short)[T.Election]}                 &      -0.5735  &        1.138     &    -0.504  &         0.614        &       -2.805    &        1.658     \\
+\textbf{C(Style\_1\_label)[T.Communal]:C(content\_short)[T.Election]}                &      -0.4063  &        1.142     &    -0.356  &         0.722        &       -2.647    &        1.834     \\
+\textbf{C(Style\_1\_label)[T.Critique/Frustration]:C(content\_short)[T.Election]}    &      -0.2182  &        1.159     &    -0.188  &         0.851        &       -2.492    &        2.056     \\
+\textbf{C(Style\_1\_label)[T.Event Coverage]:C(content\_short)[T.Election]}          &      -0.4932  &        1.114     &    -0.443  &         0.658        &       -2.678    &        1.692     \\
+\textbf{C(Style\_1\_label)[T.Miscellaneous]:C(content\_short)[T.Election]}           &      -0.6681  &        1.172     &    -0.570  &         0.569        &       -2.968    &        1.632     \\
+\textbf{C(Style\_1\_label)[T.Music/Entertainment]:C(content\_short)[T.Election]}     &      -0.7049  &        1.110     &    -0.635  &         0.525        &       -2.882    &        1.472     \\
+\textbf{C(Style\_1\_label)[T.Personal Vlog/Family]:C(content\_short)[T.Election]}    &      -0.6708  &        1.124     &    -0.597  &         0.551        &       -2.876    &        1.535     \\
+\textbf{C(Style\_1\_label)[T.Charisma/Leadership]:C(content\_short)[T.Independent]}  &      -0.2770  &        0.338     &    -0.820  &         0.412        &       -0.940    &        0.386     \\
+\textbf{C(Style\_1\_label)[T.Civic Awareness]:C(content\_short)[T.Independent]}      &       0.0106  &        0.296     &     0.036  &         0.971        &       -0.569    &        0.590     \\
+\textbf{C(Style\_1\_label)[T.Comedic]:C(content\_short)[T.Independent]}              &      -0.2974  &        0.291     &    -1.023  &         0.307        &       -0.868    &        0.273     \\
+\textbf{C(Style\_1\_label)[T.Communal]:C(content\_short)[T.Independent]}             &       0.7238  &        0.473     &     1.529  &         0.126        &       -0.205    &        1.652     \\
+\textbf{C(Style\_1\_label)[T.Critique/Frustration]:C(content\_short)[T.Independent]} &       0.5001  &        0.333     &     1.502  &         0.133        &       -0.153    &        1.153     \\
+\textbf{C(Style\_1\_label)[T.Event Coverage]:C(content\_short)[T.Independent]}       &       0.1640  &        0.229     &     0.718  &         0.473        &       -0.284    &        0.612     \\
+\textbf{C(Style\_1\_label)[T.Miscellaneous]:C(content\_short)[T.Independent]}        &      -0.4156  &        0.392     &    -1.061  &         0.289        &       -1.184    &        0.353     \\
+\textbf{C(Style\_1\_label)[T.Music/Entertainment]:C(content\_short)[T.Independent]}  &      -0.0397  &        0.199     &    -0.199  &         0.842        &       -0.430    &        0.351     \\
+\textbf{C(Style\_1\_label)[T.Personal Vlog/Family]:C(content\_short)[T.Independent]} &      -0.0898  &        0.277     &    -0.325  &         0.746        &       -0.632    &        0.453     \\
+\textbf{C(Style\_1\_label)[T.Charisma/Leadership]:C(content\_short)[T.Maoist]}       &      -0.7345  &        1.396     &    -0.526  &         0.599        &       -3.473    &        2.004     \\
+\textbf{C(Style\_1\_label)[T.Civic Awareness]:C(content\_short)[T.Maoist]}           &       1.0570  &        1.341     &     0.788  &         0.431        &       -1.573    &        3.687     \\
+\textbf{C(Style\_1\_label)[T.Comedic]:C(content\_short)[T.Maoist]}                   &       1.3598  &        1.360     &     1.000  &         0.318        &       -1.308    &        4.027     \\
+\textbf{C(Style\_1\_label)[T.Communal]:C(content\_short)[T.Maoist]}                  &       0.8898  &        1.344     &     0.662  &         0.508        &       -1.746    &        3.526     \\
+\textbf{C(Style\_1\_label)[T.Critique/Frustration]:C(content\_short)[T.Maoist]}      &       0.7176  &        1.411     &     0.509  &         0.611        &       -2.050    &        3.485     \\
+\textbf{C(Style\_1\_label)[T.Event Coverage]:C(content\_short)[T.Maoist]}            &       0.1594  &        1.306     &     0.122  &         0.903        &       -2.402    &        2.721     \\
+\textbf{C(Style\_1\_label)[T.Miscellaneous]:C(content\_short)[T.Maoist]}             &      -0.0637  &        1.426     &    -0.045  &         0.964        &       -2.861    &        2.734     \\
+\textbf{C(Style\_1\_label)[T.Music/Entertainment]:C(content\_short)[T.Maoist]}       &       0.1777  &        1.288     &     0.138  &         0.890        &       -2.348    &        2.703     \\
+\textbf{C(Style\_1\_label)[T.Personal Vlog/Family]:C(content\_short)[T.Maoist]}      &      -0.3071  &        1.350     &    -0.227  &         0.820        &       -2.955    &        2.341     \\
+\textbf{C(Style\_1\_label)[T.Charisma/Leadership]:C(content\_short)[T.UML]}          &      -0.3829  &        0.392     &    -0.976  &         0.329        &       -1.152    &        0.386     \\
+\textbf{C(Style\_1\_label)[T.Civic Awareness]:C(content\_short)[T.UML]}              &      -0.1828  &        0.329     &    -0.555  &         0.579        &       -0.829    &        0.463     \\
+\textbf{C(Style\_1\_label)[T.Comedic]:C(content\_short)[T.UML]}                      &      -0.0246  &        0.327     &    -0.075  &         0.940        &       -0.667    &        0.618     \\
+\textbf{C(Style\_1\_label)[T.Communal]:C(content\_short)[T.UML]}                     &       0.0676  &        0.288     &     0.235  &         0.815        &       -0.498    &        0.633     \\
+\textbf{C(Style\_1\_label)[T.Critique/Frustration]:C(content\_short)[T.UML]}         &       0.8653  &        0.420     &     2.059  &         0.040        &        0.041    &        1.690     \\
+\textbf{C(Style\_1\_label)[T.Event Coverage]:C(content\_short)[T.UML]}               &       0.0778  &        0.205     &     0.379  &         0.705        &       -0.325    &        0.481     \\
+\textbf{C(Style\_1\_label)[T.Miscellaneous]:C(content\_short)[T.UML]}                &      -0.0937  &        0.422     &    -0.222  &         0.824        &       -0.922    &        0.735     \\
+\textbf{C(Style\_1\_label)[T.Music/Entertainment]:C(content\_short)[T.UML]}          &      -0.0632  &        0.146     &    -0.432  &         0.666        &       -0.350    &        0.224     \\
+\textbf{C(Style\_1\_label)[T.Personal Vlog/Family]:C(content\_short)[T.UML]}         &      -0.2232  &        0.261     &    -0.855  &         0.393        &       -0.735    &        0.289     \\
+\textbf{log\_followers}                                                              &       1.0266  &        0.071     &    14.506  &         0.000        &        0.888    &        1.165     \\
+\textbf{days\_before\_election}                                                      &       0.0062  &        0.002     &     2.577  &         0.010        &        0.001    &        0.011     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       & 49.789 & \textbf{  Durbin-Watson:     } &    0.383  \\
+\textbf{Prob(Omnibus):} &  0.000 & \textbf{  Jarque-Bera (JB):  } &  123.429  \\
+\textbf{Skew:}          & -0.088 & \textbf{  Prob(JB):          } & 1.58e-27  \\
+\textbf{Kurtosis:}      &  4.380 & \textbf{  Cond. No.          } & 1.33e+16  \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors assume that the covariance matrix of the errors is correctly specified. \newline
+ [2] The smallest eigenvalue is 1.58e-27. This might indicate that there are \newline
+ strong multicollinearity problems or that the design matrix is singular.
