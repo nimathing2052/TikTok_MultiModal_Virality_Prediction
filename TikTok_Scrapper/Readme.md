@@ -33,7 +33,6 @@ TikTok_Scrapper/
 ├── users_unofficial_api.py            # Sequential user scraping (Unofficial API)
 ├── video_comments_official_api.py     # (Optional) Video comment collection (Official API)
 ├── video_comments_unofficial_api.py   # (Optional) Video comment collection (Unofficial API)
-├── filter.py                          # (Optional) Helper functions
 ├── README_scripts.md                  # Documentation (this file)
 ```
 
