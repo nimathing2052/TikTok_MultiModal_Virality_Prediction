@@ -18,7 +18,7 @@ This repository contains the code, data, and documentation for a thesis project 
 
 ## Repository Structure
 
-
+```
 NEP_LOCAL_ELECTION/
 ├── Analysis/
 │   └── EDA/                              # Outputs from Exploratory Data Analysis
@@ -43,8 +43,6 @@ NEP_LOCAL_ELECTION/
 │   ├── users_unofficial_api.py           # Sequential user scraping (Unofficial API)
 │   ├── video_comments_official_api.py    # (Optional) Video comment collection (Official API)
 │   ├── video_comments_unofficial_api.py  # (Optional) Video comment collection (Unofficial API)
-│   ├── filter.py                         # (Optional) Helper functions
-│   └── ...                               # Additional scraping scripts
 ├── EDA_Analysis_Full_Dataset.ipynb       # Notebook for Exploratory Data Analysis
 ├── hashtags_plot.png                     # Plot of top hashtags from EDA
 ├── model_summary.tex                     # LaTeX output of OLS model summary (RQ2)
@@ -52,7 +50,7 @@ NEP_LOCAL_ELECTION/
 ├── RQ_2_Analysis.ipynb                   # Notebook for RQ2: Impact of styles/themes on virality
 ├── xgb_model.pkl                         # Saved XGBoost model from RQ1
 └── README.md                             # Project documentation
-
+```
 
 # 🇳🇵 TikTok Political Virality Analysis - Nepal 2022 Local Elections
 
