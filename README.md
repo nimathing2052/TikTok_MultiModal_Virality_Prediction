@@ -97,7 +97,7 @@ The `TikTok_Scrapper` directory provides a modular scraper, extending [gabbypint
 
 ---
 
-## 🚀 Usage Guide
+## 🚀 Usage Guide (ONLY IF YOU WANT TO DOWNLOAD NEW VIDEO METADATA/THE DATA IS ALREADY PRESENT IN DATA FOLDER)
 
 ### 1. Setup Environment Variables
 
